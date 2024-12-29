@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login e Verificador de Acertos</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Tela de Login -->
+  <div class="container" id="login-container">
+    <div class="title">Login</div>
+    <form id="login-form">
+      <div class="form-group">
+        <input type="text" id="username" placeholder="Usuário" required />
+      </div>
+      <div class="form-group">
+        <input type="password" id="password" placeholder="Senha" required />
+      </div>
+      <button type="submit" class="button">Entrar</button>
+    </form>
+    <div class="error" id="error-message"></div>
+  </div>
+
+  <!-- Tela do Verificador de Acertos -->
+  <div class="container hidden" id="verificador-container">
+    <div class="title">Verificador de Acertos</div>
+    <div class="inputs" id="input-fields"></div>
+    <button class="button" onclick="verificarNumeros()">Verificar</button>
+    <div class="error" id="verificador-error-message"></div>
+    <div class="results" id="results"></div>
+    <div id="success-message"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
